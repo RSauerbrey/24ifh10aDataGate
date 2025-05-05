@@ -1,17 +1,17 @@
-#ifndef FEUCHTESENSOR_H
-#define FEUCHTESENSOR_H
+#ifndef TEMPERATURSENSOR_H
+#define TEMPERATURSENSOR_H
 
 #include "datagate.h"
 
-class FeuchteSensor : public DataGate
+class TemperaturSensor : public DataGate
 {
 private:
     float messdaten[10];
 public:
-    FeuchteSensor();
+    TemperaturSensor();
     string getSensorType();
     void fetchData(float data[]);
     int dataSize();
 };
 
-#endif // FEUCHTESENSOR_H
+#endif // TEMPERATURSENSOR_H

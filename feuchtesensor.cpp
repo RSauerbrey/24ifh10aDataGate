@@ -1,6 +1,15 @@
 #include "feuchtesensor.h"
+#include "stdlib.h"
+#include "time.h"
 
-FeuchteSensor::FeuchteSensor() {}
+FeuchteSensor::FeuchteSensor()
+{
+    srand(time(NULL));
+    //Testdaten erzeugen
+    for(int i = 0; i < 10; i++)
+       messdaten[i] = (float)( rand()% 1001 )/10 ;
+
+}
 
 string FeuchteSensor::getSensorType()
 {
@@ -9,11 +18,11 @@ string FeuchteSensor::getSensorType()
 
 void FeuchteSensor::fetchData(float data[])
 {
-    //ToDo
+    for(int i = 0; i < 10; i++)
+        data[i] = messdaten[i];
 }
 
 int FeuchteSensor::dataSize()
 {
-    //ToDo
-    return 0;
+    return 10;
 }
