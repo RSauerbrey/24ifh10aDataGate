@@ -7,6 +7,8 @@ SOURCES += \
         analyzer.cpp \
         avganalyzer.cpp \
         datagate.cpp \
+        dlist.cpp \
+        dlistelement.cpp \
         feuchtesensor.cpp \
         main.cpp \
         maxanalyzer.cpp \
@@ -16,6 +18,8 @@ HEADERS += \
     analyzer.h \
     avganalyzer.h \
     datagate.h \
+    dlist.h \
+    dlistelement.h \
     feuchtesensor.h \
     maxanalyzer.h \
     temperatursensor.h
